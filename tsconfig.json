@@ -32,7 +32,9 @@
     "types": [
       "@types/node",
       "@types/jest",
-      "@nuxt/types"
+      "@nuxt/types",
+      "nuxt-i18n/types",
+      "vue-router/types"
     ]
   },
   "exclude": [
