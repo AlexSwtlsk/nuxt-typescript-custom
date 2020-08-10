@@ -6,9 +6,11 @@ export default {
   mode: 'universal',
 
   loading: { color: '#3B8070' },
+  components: true,
 
   buildModules: [
     '@nuxt/typescript-build',
+    '@nuxt/components',
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N]
   ],
