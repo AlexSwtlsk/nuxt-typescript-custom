@@ -27,7 +27,9 @@ export default {
     }
   },
 
-  plugins: [],
+  plugins: [
+    '@/plugins/font-awesome'
+  ],
 
   build: {},
 
