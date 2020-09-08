@@ -3,6 +3,7 @@ import { I18N } from './i18n/i18n'
 
 export default {
   head,
+  target: 'static',
   mode: 'universal',
 
   loading: { color: '#3B8070' },
@@ -21,15 +22,7 @@ export default {
     scss: ['~/assets/scss/main.scss']
   },
 
-  typescript: {
-    typeCheck: {
-      eslint: true
-    }
-  },
-
-  plugins: [
-    '@/plugins/font-awesome'
-  ],
+  plugins: ['@/plugins/font-awesome'],
 
   build: {},
 
