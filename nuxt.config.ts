@@ -4,7 +4,8 @@ import { I18N } from './i18n/i18n'
 export default {
   head,
   target: 'static',
-  mode: 'universal',
+  ssr: true,
+  modern: process.env.NODE_ENV === 'production',
 
   loading: { color: '#3B8070' },
   components: true,
