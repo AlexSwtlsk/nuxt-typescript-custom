@@ -4,6 +4,7 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/$1',
     '^vue$': 'vue/dist/vue.common.js'
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleFileExtensions: ['js', 'ts', 'vue', 'json'],
   transform: {
     '^.+\\.js$': 'babel-jest',
@@ -15,5 +16,10 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
-  ]
+  ],
+  globals: {
+    'ts-jest': {
+      babelConfig: true
+    }
+  }
 }
