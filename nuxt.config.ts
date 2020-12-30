@@ -4,11 +4,11 @@ import { I18N } from './i18n/i18n'
 
 export default {
   head: {
-    title: 'Typescript Nuxt template',
+    // title: '', // handled in layout.vue
     meta,
     link
   },
-  target: 'static',
+  target: 'server',
   ssr: true,
   modern: process.env.NODE_ENV === 'production',
 
@@ -35,7 +35,10 @@ export default {
     scss: ['~/assets/scss/main.scss']
   },
 
-  plugins: ['@/plugins/font-awesome'],
+  plugins: [
+    '@/plugins/font-awesome',
+    '@/plugins/sentry'
+  ],
 
   pwa: {
     workbox: false,
@@ -64,6 +67,9 @@ export default {
 
   publicRuntimeConfig: {
     API_URL: process.env.API_URL,
-    DOMAIN_NAME: process.env.DOMAIN_NAME
+    DOMAIN_NAME: process.env.DOMAIN_NAME,
+    SENTRY_ENABLED: process.env.SENTRY_ENABLED,
+    SENTRY_ENVIRONMENT: process.env.SENTRY_ENVIRONMENT,
+    SENTRY_DSN: process.env.SENTRY_DSN
   }
 }
