@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['@nuxtjs/eslint-config-typescript'],
   rules: {
-    'no-console': 'warn',
+    'no-console': ['error', { allow: ['error'] }],
     'vue/html-closing-bracket-spacing': [
       'error',
       {
