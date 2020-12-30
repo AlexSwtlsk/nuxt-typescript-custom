@@ -4,7 +4,7 @@
       id="title"
       class="header"
     >
-      Nuxt TypeScript Starter
+      {{ $t('app.title') }}
 
       <FontAwesomeIcon :icon="['fas', 'home']" />
     </h1>

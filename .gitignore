@@ -469,3 +469,5 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/git,node,nuxt,code,java,linux,macos,emacs,maven,gradle,windows,eclipse,intellij+all
+
+sw.js

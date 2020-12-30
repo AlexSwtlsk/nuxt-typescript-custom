@@ -29,6 +29,8 @@
     "@nuxt/typescript-build": "^2.0.0",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/pwa": "^3.3.3",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@types/jest": "^26.0.0",
     "eslint": "^7.0.0",
