@@ -63,7 +63,9 @@ export default {
     }
   },
 
-  build: {},
+  build: {
+    analyze: process.env.NODE_ENV !== 'production'
+  },
 
   publicRuntimeConfig: {
     API_URL: process.env.API_URL,
