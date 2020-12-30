@@ -8,8 +8,8 @@
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "lint": "eslint --ext .ts,.js,.vue .",
-    "lintfix": "eslint --ext .ts,.js,.vue . --fix",
+    "lint": "eslint --ignore-path .gitignore --ext .ts,.js,.vue .",
+    "lintfix": "eslint --ignore-path .gitignore --ext .ts,.js,.vue . --fix",
     "test:unit": "jest",
     "test:unit:coverage": "jest --silent --coverage",
     "test:unit:watch": "jest --watchAll"
@@ -44,6 +44,7 @@
     "node-sass": "^5.0.0",
     "nuxt-i18n": "^6.10.1",
     "nuxt-property-decorator": "^2.7.2",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.0.0",
     "sass-loader": "^10.0.0",
     "ts-jest": "^26.4.4",
@@ -51,5 +52,8 @@
     "vue-jest": "^3.0.5",
     "vuex": "^3.3.0",
     "vuex-class": "^0.3.2"
-  }
+  },
+  "pre-commit": [
+    "lintfix"
+  ]
 }
