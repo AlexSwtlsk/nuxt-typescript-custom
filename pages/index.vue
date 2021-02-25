@@ -12,8 +12,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { defineComponent } from '@nuxtjs/composition-api'
 
-@Component
-export default class IndexPage extends Vue {}
+export default defineComponent({
+  setup () {
+    // const { $config } = useContext()
+    return {
+    }
+  }
+})
 </script>

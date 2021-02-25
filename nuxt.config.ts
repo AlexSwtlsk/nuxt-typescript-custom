@@ -17,6 +17,7 @@ export default {
 
   buildModules: [
     '@nuxt/typescript-build',
+    '@nuxtjs/composition-api',
     '@nuxt/components',
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
